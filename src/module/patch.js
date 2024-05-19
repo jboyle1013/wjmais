@@ -131,7 +131,7 @@ function patchProficiency() {
     "wjmais",
     "CONFIG.Actor.documentClass.prototype._prepareVehicleData",
     function (wrapped, ...args) {
-      if (this.flags?.wjmais?.npc) wrapped(...args);
+      if (this.flags?.wjmais?.vehicle) wrapped(...args);
     },
     "MIXED"
   );
